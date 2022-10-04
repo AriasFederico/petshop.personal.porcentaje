@@ -1,2 +1,2 @@
-const nombreBolsa = prompt('Hola!, que bolsa queres actualizar?');
-let pesoBolsa = prompt('Cuánto pesa' ${nombreBolsa?}'?');
+let nombreB = prompt('NOMBRE DE LA BOLSA');
+let bolsaP = prompt('PESO DE LA BOLSA');
