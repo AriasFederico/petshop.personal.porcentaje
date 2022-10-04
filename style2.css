@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&display=swap');
 :root{
-    --color-principal:green;
+    --color-principal:#7ed957;
     --color-secundario:black;
 
 /* fuente */
@@ -9,9 +9,6 @@
 
 html {
     font-size: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 body {
     max-width: 80%;
@@ -28,9 +25,3 @@ section {
     justify-content: center;
 
 }
-
-li {
-    margin-bottom: .5rem;
-    color: var(--color-principal);
-}
-
