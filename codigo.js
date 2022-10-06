@@ -1,21 +1,21 @@
-let nombreB = prompt('NOMBRE DE LA BOLSA');
-let bolsaP = prompt('PESO DE LA BOLSA (sin letras)');
-let precioB = prompt('PRECIO');
-// parseint
-let bolsaPeso = parseInt(bolsaP);
-let precioBolsa = parseInt(precioB);
+var name = prompt(`NOMBRE DE LA BOLSA`);
+var peso = prompt(`CUÁNTO PESA ${name}?`);
+var precio = prompt(`PRECIO DE ${name}`);
+// parseInt
+var precioP = parseInt(precio);
 
-
-const porc = (a)=>{
-    let porcentaje = (((a * 25) / (100)) + precioBolsa);
-    document.write(`<h2>El precio actual de la bolsa de  ${nombreB} es: <span style= 'color:green'>$ ${porcentaje}</span></h2>`);
+const bolsa = (a)=>{
+    let porcentaje = (a * 25) / 100;
+    let res = porcentaje + a;
+    document.write(`<H2><span style = 'color:red'>${name}</span> BOLSA <span style = 'color:green'>$ ${res}</span></H2>`);
 }
 
-const kilo = (b)=>{
-    let porcentajeKilos = (((b * 40) / (100)) + precioBolsa);
-    let precioK = porcentajeKilos / bolsaPeso;
-    document.write(`<h2>El precio actual de ${nombreB} por kilogramo es: <span style= 'color:green'>$ ${precioK}</span></h2>`);
+const kilo = (a,b)=>{
+    let porcentaje = a * 40 / 100;
+    let suma = porcentaje + a;
+    let res = suma / b;
+    document.write(`<H2><span style = 'color:red'>${name}</span> KILO <span style = 'color:green'>$ ${res}</span></H2>`);
 }
 
-porc(precioB);
-kilo(precioB);
+bolsa(precioP);
+kilo(precioP,peso);
